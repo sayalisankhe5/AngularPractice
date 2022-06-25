@@ -1,0 +1,13 @@
+<fieldset>
+    <legend>
+    Welcome to basic-calculator !
+    </legend>
+    
+    <calculator-component (onResultComputed)="onResultComputedHandler($event)"></calculator-component>
+    <fieldset>
+        <legend>Computation Summary</legend>
+        <computation-summary [resultSummary]="result"></computation-summary>
+    </fieldset>
+    
+    </fieldset>
+    

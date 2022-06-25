@@ -1,0 +1,45 @@
+<table>
+    <tr>
+    <td>
+    <label-component [message]="'Operand1:'"></label-component>
+    </td>
+    <td>
+    <input type="number" #operand1TxtBx [(ngModel)]="operand1"
+      />
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label-component [message]="'Operand2:'"></label-component>
+    </td>
+    <td>
+    <input type="number" [(ngModel)]="operand2" />
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label-component [message]="'Result:'"></label-component>
+    </td>
+    <td>
+    <input type="text" disabled="true" [value]="result" />
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label-component [message]="'Operation:'"></label-component>
+    
+    </td>
+    <td>
+        <button (click)="onAddClick()">Add</button>
+    <button (click)="onSubClick()">Sub</button>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label-component [message]="'Clear Contents:'"></label-component>
+    </td>
+    <td>
+    <button (click)="onClearClick()">Clear</button>
+    </td>
+    </tr>
+    </table>
